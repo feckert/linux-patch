@@ -1,0 +1,23 @@
+From 3a74dcab2a3c9c03e5976a0c117d82930f944ead Mon Sep 17 00:00:00 2001
+From: Florian Eckert <fe@dev.tdt.de>
+Date: Thu, 4 Jul 2019 10:49:48 +0200
+Subject: [PATCH 0/3] Update pcengines-apuv2 platform device
+
+This patchset adds the following changes to this pcengines-apuv2
+platform device.
+
+* Add mpcie reset gpio export
+* Add legacy leds gpio definitions
+* Update gpio buttion definitions
+
+Florian Eckert (3):
+  platform/x86/pcengines-apuv2: add mpcie reset gpio export
+  platform/x86/pcengines-apuv2: add legacy leds gpio definitions
+  platform//x86/pcengines-apuv2: update gpio button definition
+
+ drivers/platform/x86/pcengines-apuv2.c | 32 ++++++++++++++++++++++++++++----
+ 1 file changed, 28 insertions(+), 4 deletions(-)
+
+-- 
+2.11.0
+
