@@ -1,7 +1,7 @@
-From 06d65d3bdc377cdec819e3b0558651f26e354788 Mon Sep 17 00:00:00 2001
+From 024d8ddebcd28df5239e691837a2937153de63c7 Mon Sep 17 00:00:00 2001
 From: Florian Eckert <fe@dev.tdt.de>
 Date: Mon, 8 Nov 2021 16:34:33 +0100
-Subject: [PATCH 2/2] dt: bindings: KTD20xx: Introduce the ktd20xx family of
+Subject: [PATCH v2 2/2] dt: bindings: KTD20xx: Introduce the ktd20xx family of
  RGB drivers
 
 Introduce the bindings for the Kinetic KTD2061/58/59/60RGB LED device
