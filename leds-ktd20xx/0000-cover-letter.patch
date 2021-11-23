@@ -1,0 +1,28 @@
+From 06d65d3bdc377cdec819e3b0558651f26e354788 Mon Sep 17 00:00:00 2001
+From: Florian Eckert <fe@dev.tdt.de>
+Date: Tue, 9 Nov 2021 10:58:26 +0100
+Subject: [PATCH 0/2] leds: Add KTD20xx RGB LEDs driver from Kinetic
+
+Introduce the KTD2061/58/59/60 RGB LEDs driver. The difference in these
+parts are the address number on the I2C bus the device is listen on.
+
+All KT20xx device could control up to 12 LEDs. The chip can be operated
+in two variants.
+
+Florian Eckert (2):
+  leds: ktd20xx: Add the KTD20xx family of the RGB LEDs driver from
+    Kinetic
+  dt: bindings: KTD20xx: Introduce the ktd20xx family of RGB drivers
+
+ .../bindings/leds/leds-ktd20xx.yaml           | 123 +++
+ MAINTAINERS                                   |   7 +
+ drivers/leds/Kconfig                          |  13 +
+ drivers/leds/Makefile                         |   1 +
+ drivers/leds/leds-ktd20xx.c                   | 801 ++++++++++++++++++
+ 5 files changed, 945 insertions(+)
+ create mode 100644 Documentation/devicetree/bindings/leds/leds-ktd20xx.yaml
+ create mode 100644 drivers/leds/leds-ktd20xx.c
+
+-- 
+2.20.1
+
